@@ -10,14 +10,90 @@
 </head>
 
 <body>
-  <div id="header">
-    
-  </div>
+  <section id="hero">
+    <img class="astronaut" src="./assets/astronaut.png" alt="Astronauta flutuando" />
 
-  <main id="content">
+    <div class="hero-cta">
+      <div class="hero-cta-titles">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
+      </div>
+
+      <a href="#cards" class="hero-cta-down-button">
+        <img class="down-arrow-icon" src="./assets/down-arrow.svg"
+          alt="Seta para baixo sinalizando que há mais conteúdo ao rolar a tela">
+      </a>
+    </div>
+  </section>
+
+  <main id="cards">
+    <article class="card">
+      <img src="./assets/yellow-planet.svg" alt="Planeta amarelo">
+
+      <div class="card-text">
+        <h2>Não pare nunca</h2>
+        <p>
+          Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca".
+          Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="./assets/blue-planet.svg" alt="Planeta azul">
+
+      <div class="card-text">
+        <h2>Só volta</h2>
+        <p>
+          Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às
+          vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="./assets/pink-planet.svg" alt="Planeta rosa">
+
+      <div class="card-text">
+        <h2>Siga seu ritmo</h2>
+        <p>
+          Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos
+          passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo
+          final.
+        </p>
+      </div>
+    </article>
   </main>
 
+  <section id="contact">
+    <form>
+      <fieldset>
+        <legend>Entre em contato</legend>
+
+        <div class="fieldset-wrapper">
+          <div class="input-wrapper">
+            <label for="form-name">Nome</label>
+            <input class="input-avatar-icon" type="text" id="form-name" placeholder="Seu nome" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-email">Email</label>
+            <input class="input-at-icon" type="email" id="form-email" placeholder="Email" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-message">Mensagem</label>
+            <textarea id="form-message" placeholder="Digite sua mensagem aqui..." required></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <button>Enviar Mensagem</button>
+    </form>
+  </section>
+
   <footer>
+    <p>&copy; 2025 - Rocketseat Explorer</p>
   </footer>
 </body>
 
