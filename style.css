@@ -13,7 +13,7 @@
   font-size: 62.5%;
   /* 62.5% = 10px = 1rem */
 
-  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  --gradient-background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
   --purple-700: #312D64;
   --pink-400: #B52184;
   --pink-100: #F9F4FB;
@@ -40,11 +40,6 @@ fieldset {
   border: none;
 }
 
-input,
-textarea {
-  color: var(--gradient-background);
-}
-
 button {
   font-size: 1.4rem;
   font-weight: 700;
@@ -58,6 +53,11 @@ button {
   background: var(--gradient-background);
 
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+  transition: all 500ms ease;
 }
 
 /* Typography */
@@ -112,7 +112,11 @@ textarea::placeholder {
 
 #hero .hero-cta .hero-cta-down-button img {
   width: 5.3rem;
-  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+}
+
+#hero .hero-cta .hero-cta-down-button:hover {
+  cursor: pointer;
 }
 
 #hero .hero-cta .hero-cta-titles {
@@ -144,6 +148,12 @@ textarea::placeholder {
 
   border-radius: 2rem;
   background-color: var(--white-100);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#cards .card:hover {
+  transform: scale(1.03);
+  transition: all 200ms ease-in-out;
 }
 
 #cards .card img {
@@ -221,6 +231,7 @@ footer p {
 /* Media Queries */
 
 @media(min-width: 425px) {
+
   /* Global Styles */
   h1,
   legend {
@@ -244,22 +255,23 @@ footer p {
   #hero .hero-cta .hero-cta-down-button img {
     width: 5.9rem;
   }
-  
+
   /* Cards Section */
   #cards .card {
     padding: 3.5rem;
   }
-  
+
   #cards .card img {
     width: 8rem;
   }
-  
+
   #cards .card-text h2 {
     margin: 3rem auto 1.6rem;
   }
 }
 
 @media(min-width: 930px) {
+
   /* Global Styles */
   h2 {
     font-size: 2.3rem;
@@ -287,6 +299,7 @@ footer p {
 }
 
 @media(min-width: 1020px) {
+
   /* Global Styles */
   form {
     max-width: 40rem;
@@ -305,6 +318,7 @@ footer p {
 }
 
 @media(min-width: 1230px) {
+
   /* Global Styles */
   h2 {
     font-size: 2.8rem;
@@ -331,6 +345,7 @@ footer p {
 }
 
 @media(min-width: 1440px) {
+
   /* Global Styles */
   h1 {
     font-size: 5.7rem;
